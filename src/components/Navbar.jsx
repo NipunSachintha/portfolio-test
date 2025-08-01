@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './Navbar.css'
-import ThemeToggle from './ThemeToggle'
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false)

@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Projects.css'
 
 const Projects = () => {
-    const [activeFilter, setActiveFilter] = useState('all')
-
     const projects = [
         {
             id: 1,
@@ -73,18 +71,6 @@ const Projects = () => {
         }
     ]
 
-    const filters = [
-        { id: 'all', label: 'All Projects' },
-        { id: 'frontend', label: 'Frontend' },
-        { id: 'backend', label: 'Backend' },
-        { id: 'fullstack', label: 'Full Stack' },
-        { id: 'hardware', label: 'Hardware' }
-    ]
-
-    const filteredProjects = activeFilter === 'all'
-        ? projects
-        : projects.filter(project => project.category === activeFilter)
-
     return (
         <section id="projects" className="projects">
             <div className="container">
@@ -96,7 +82,7 @@ const Projects = () => {
                 
 
                 <div className="projects-grid">
-                    {filteredProjects.map(project => (
+                    {projects.map(project => (
                         <div key={project.id} className="project-card">
                             <div className="project-image">
                                 <div className="project-icon">{project.image}</div>
