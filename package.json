@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://nipunsachintha.github.io/portfolio-test",
+  "homepage": "https://nipungunarathna.me",
   "type": "module",
   "scripts": {
     "dev": "vite",
